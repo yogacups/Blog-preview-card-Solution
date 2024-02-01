@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2 {
+  font-family: "Young Serif", serif;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+h2 {
+  color: hsl(14, 45%, 36%);
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+  font-family: "Outfit", sans-serif;
+  display: grid;
+  place-content: center;
+  min-height: 250vh;
+}
+
+p,
+li {
+  margin-bottom: 0.5rem;
+  color: hsl(30, 10%, 34%);
+}
+
+a {
+  font-weight: 800;
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  padding: 2.5rem;
+  max-width: 800px;
+  border-radius: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.container .illustration {
+  max-width: 100%;
+  border-radius: 1.25rem;
+  margin-bottom: 20px;
+}
+.container h1 {
+  color: hsl(24, 5%, 18%);
+  margin-bottom: 20px;
+}
+
+.container #title {
+  color: hsl(30, 10%, 34%);
+  margin-bottom: 1rem;
+}
+
+.container .preparation {
+  padding-left: 2.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: hsl(330, 100%, 98%);
+  margin-bottom: 1.25rem;
+}
+
+.container .preparation h3 {
+  color: hsl(332, 51%, 32%);
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.container .preparation ul {
+  margin-left: 1rem;
+}
+
+.container .ingredients {
+  padding-bottom: 1.25rem;
+  border-bottom: solid hsl(30, 18%, 87%);
+}
+.container .ingredients ul {
+  margin-left: 1rem;
+}
+
+.container .instruction {
+  padding-bottom: 1.25rem;
+  padding-top: 1.4rem;
+  border-bottom: solid hsl(30, 18%, 87%);
+}
+
+.container .instruction ol {
+  margin-left: 1rem;
+}
+
+.container .nutrition {
+  padding-bottom: 1.25rem;
+  padding-top: 1.4rem;
+}
+
+.container .nutrition .nut {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 0.2rem;
+  padding-bottom: 0.25rem;
+  border-bottom: solid hsl(30, 18%, 87%);
+  padding-left: 1rem;
+}
+
+.container .nutrition .net {
+  font-weight: 900;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(330, 100%, 98%);
+}
