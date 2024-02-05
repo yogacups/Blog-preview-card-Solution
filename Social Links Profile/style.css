@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: white;
+  background-color: hsl(0, 0%, 8%);
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: hsl(0, 0%, 12%);
+  padding: 1.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1.25rem;
+  width: 375px;
+  margin-bottom: 2rem;
+}
+.container img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 1.25rem;
+}
+
+.container h1 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.container h2 {
+  color: hsl(75, 94%, 57%);
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 1.25rem;
+}
+
+.container p {
+  color: hsl(0, 0%, 50%);
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 1.25rem;
+}
+
+.container .button {
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  height: 50px;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+}
+
+.container .button:hover {
+  background-color: hsl(0, 0%, 50%);
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 300px;
+  }
+}
