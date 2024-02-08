@@ -7,74 +7,118 @@
 }
 
 body {
-  background-color: hsl(0, 0%, 100%);
-  font-family: "Hanken Grotesk", sans-serif;
-  display: grid;
-  place-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   min-height: 100vh;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 500px;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  border-radius: 1.25rem;
+  border: solid black;
 }
 
-.container .result {
-  background-color: hsl(252, 100%, 67%);
-  border-radius: 1.25rem;
+.left {
+  color: white;
   padding: 1.25rem;
-  display: grid;
+  width: 40%;
+  border-radius: 1.25rem;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.container .result h3 {
-  color: hsl(241, 100%, 89%);
+.left h4 {
   text-align: center;
   margin-bottom: 1rem;
+  font-size: 20px;
+  color: hsl(241, 100%, 89%);
 }
 
-.container .result .score {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  background-color: hsla(256, 72%, 46%, 1);
+.score-left {
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  box-shadow: inset 1px 1px 12px 0px hsla(256, 72%, 46%, 1);
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.container .result h1 {
-  text-align: center;
+.big-score {
   color: white;
-  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 60px;
 }
 
-.result p {
+.left h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 25px;
+}
+
+p {
   text-align: center;
   color: hsl(241, 100%, 89%);
+  font-size: 14px;
   margin-bottom: 1rem;
 }
-
-.container .summary {
-  background-color: white;
+.right {
+  width: 60%;
   padding: 1.25rem;
 }
 
-.summary .title {
-  color: black;
-  text-align: left;
+.right h4 {
+  font-size: 20px;
   margin-bottom: 1rem;
 }
 
-.summary .stats {
+.scores {
+  border: solid black;
   padding: 1rem;
-  border-radius: 1rem;
+}
+
+.score {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
   display: flex;
   justify-content: space-between;
-  background-color: hsl(0, 100%, 67%);
-  opacity: 0.5;
-  margin-bottom: 1rem;
+  border: solid black;
+  border-radius: 0.5rem;
+}
+
+.reaction {
+  background-color: hsl(0, 100%, 87%);
+}
+
+.reaction .reaction {
+  color: hsl(0, 100%, 67%);
+}
+
+.score-con span {
+  font-weight: bold;
+}
+
+.score img {
+  margin-right: 0.5rem;
+  height: 15px;
+}
+
+.score .black-text {
+  font-weight: 800;
+}
+
+.score .grey-text {
+  color: hsl(224, 30%, 27%);
 }
 
 .attribution {
