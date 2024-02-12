@@ -21,7 +21,7 @@ body {
   justify-content: center;
   border-radius: 1.25rem;
   /* border: solid black; */
-  box-shadow: 1px 1px 5px 0px black;
+  box-shadow: 1px 0px 20px 2px;
   margin-bottom: 20px;
 }
 
@@ -91,7 +91,7 @@ p {
 
 .score {
   margin-bottom: 0.5rem;
-  padding: 0.5rem;
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
   /* border: solid black; */
@@ -99,7 +99,7 @@ p {
 }
 
 .reaction {
-  background-color: hsl(0, 100%, 87%);
+  background-color: hsla(0, 100%, 67%, 0.1);
 }
 
 .reaction .reaction {
@@ -107,14 +107,14 @@ p {
 }
 
 .memory {
-  background-color: hsl(39, 100%, 90%);
+  background-color: hsl(39, 100%, 56%, 0.1);
 }
 .memory .memory {
   color: hsl(39, 100%, 56%);
 }
 
 .verbal {
-  background-color: hsl(166, 100%, 87%);
+  background-color: hsl(166, 100%, 37%, 0.1);
 }
 
 .verbal .verbal {
@@ -122,7 +122,7 @@ p {
 }
 
 .visual {
-  background-color: hsl(234, 85%, 75%);
+  background-color: hsl(234, 85%, 45%, 0.1);
 }
 
 .visual .visual {
@@ -148,12 +148,13 @@ p {
 
 button {
   width: 250px;
-  height: 35px;
   border-radius: 1.25rem;
   color: white;
   background-color: hsl(224, 30%, 27%);
   font-weight: 600;
   margin-left: 60px;
+  border: none;
+  padding: 1rem;
 }
 
 .attribution {
@@ -162,4 +163,19 @@ button {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 760px) {
+  .left {
+    width: 100%;
+    border-radius: 0rem;
+    border-bottom: 1.25rem;
+  }
+
+  .container {
+    width: 100%;
+    flex-direction: column;
+    border-radius: 0;
+    overflow: hidden;
+  }
 }
